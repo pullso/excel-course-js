@@ -1,5 +1,22 @@
-$red: red;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import '~normalize.css';
+@import "formula";
+@import "header";
+@import "toolbar";
+@import "table";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 body {
-  background-color: $red;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
 }
+
+.excel {
+ position: relative;
+}
+
