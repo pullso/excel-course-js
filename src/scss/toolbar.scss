@@ -10,6 +10,7 @@
   border-bottom: 1px solid $border-color;
   display: flex;
   padding: 7px 10px;
+  height: $toolbar-height;
 
   & .button {
     @include button(green);
