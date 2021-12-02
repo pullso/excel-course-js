@@ -16,6 +16,7 @@ class Dom {
     return this.$el.textContent.trim()
   }
 
+
   html(html) {
     if (typeof html === 'string') {
       this.$el.innerHTML = html
