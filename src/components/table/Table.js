@@ -19,10 +19,6 @@ export class Table extends ExcelComponent {
     });
   }
 
-  onClick() {
-
-  }
-
   updateTextInStore(value) {
     this.$dispatch(actions.changeText({
       id: this.selection.current.id(),
