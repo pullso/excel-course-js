@@ -1,6 +1,6 @@
 import {Page} from '../core/Page';
 import {debounce, storage} from '../core/utils';
-import {createStore} from '../core/createStore';
+import {createStore} from '../core/store/createStore';
 import {rootReducer} from '../store/rootReducer';
 import {normalizeInitialState} from '../store/initialState';
 import {Excel} from '../components/excel/Excel';
