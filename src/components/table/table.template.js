@@ -13,7 +13,7 @@ const DEFAULT_HEIGHT = 24
 
 function toCell(state, row) {
   return function(_, col) {
-    const width = getWidth(state.colState, col)
+    const width = getWidth(state?.colState, col)
     const id = `${row}:${col}`
     const data = state.dataState[id]
     const styles = toInlineStyles({
@@ -72,7 +72,7 @@ function toChar(_, index) {
 }
 
 function getWidth(state, index) {
-  return (state[index] || DEFAULT_WIDTH) + 'px'
+  return (state && state[index] ? state[index] : DEFAULT_WIDTH) + 'px'
 }
 
 function getHeight(state, index) {
